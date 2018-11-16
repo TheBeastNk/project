@@ -1,0 +1,64 @@
+<div *ngIf="selectedContact">
+    <table class="table table-bordered">
+    <tr>
+        <th>E-mail Address</th>
+        <td>{{ selectedContact['E-mail Address'] ? selectedContact['E-mail Address'] : 'NA'}}</td>
+    </tr>
+
+    <!-- <tr>
+        <th>Related name</th>
+        <td>{{ selectedContact['Related name'] ? selectedContact['Related name'] : 'NA'}}</td>
+    </tr>
+
+    <tr>
+        <th>Home Address</th>
+        <td>{{ selectedContact['Home Address 2'] ? selectedContact['Home Address 2'] : 'NA'}}</td>
+    </tr>
+
+    <tr>
+        <th>Anniversary</th>
+        <td>{{ selectedContact['Anniversary'] ? selectedContact['Anniversary'] : 'NA'}}</td>
+    </tr>
+-->
+    <tr>
+        <th>First Name</th>
+        <td>{{ selectedContact['First Name'] ? selectedContact['First Name'] : 'NA'}}</td>
+    </tr>
+
+    <tr>
+        <th>Last Name</th>
+        <td>{{ selectedContact['Last Name'] ? selectedContact['Last Name'] : 'NA'}}</td>
+    </tr>
+
+    <tr>
+        <th>Business Address</th>
+        <td>{{ selectedContact['Business Address 2'] ? selectedContact['Business Address 2'] : 'NA'}}</td>
+    </tr>
+
+    <tr>
+        <th>Department</th>
+        <td>{{ selectedContact['Department'] ? selectedContact['Department'] : 'NA'}}</td>
+    </tr>
+
+    <tr>
+        <th>Display Name</th>
+        <td>{{ selectedContact['Display Name'] ? selectedContact['Display Name'] : 'NA'}}</td>
+    </tr>
+
+    <tr>
+        <th>Country</th>
+        <td>{{ selectedContact['Business Country'] ? selectedContact['Business Country'] : 'NA'}}</td>
+    </tr>
+
+    <tr>
+        <th>Home Phone</th>
+        <td>{{ selectedContact['Home Phone'] ? selectedContact['Home Phone'] : 'NA'}}</td>
+    </tr>
+
+    <tr>
+        <th>Country Code</th>
+        <td>{{ selectedContact['Country Code'] ? selectedContact['Country Code'] : 'NA'}}</td>
+    </tr>
+    <tr><td colspan="2"><button type="button" class="btn">edit</button></td></tr>
+    </table>
+</div>

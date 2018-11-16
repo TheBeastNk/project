@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width:291px;" [(ngModel)] = "searchKeyword" (keyup)="searchContact()" placeholder="search by name or phone number">
+        </div>
+    <div class="clear"></div>
+    <div style="background-color: lavender;padding-top: 5px;padding-bottom: 5px;width: 100%; height: 80vh;overflow-y: scroll;">   
+    <ul class="list-group" *ngIf="contactsList">
+    <li style="cursor: pointer;" *ngFor="let contact of contactsList | filter : searchKeyword" class="list-group-item" [class.active]="contact==selectedContact" (click)="getDetails(contact)"><img src="https://www.w3schools.com/bootstrap/img_avatar2.png" alt="Avatar" class="avatar"> &nbsp;{{contact["First Name"]+ " "+ contact["Last Name"]}}</li>
+    
+  </ul>
+  </div>
+      </div>
+      <div class="col-lg-6" style="background-color: lavenderblush;">
+     
+       <app-contact-detail *ngIf="selectedContact" [selectedContact] = "selectedContact"></app-contact-detail>
+  
+     </div>
+  
+      
+      
+    </div>
+  </div>
